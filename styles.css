@@ -474,6 +474,37 @@ section {
     background: var(--bg-light);
 }
 
+/* Projects grid/cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+.project-card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.projects-subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    color: #2b6cb0;
+}
+.project-meta {
+    margin-top: .75rem;
+    font-size: .875rem;
+    color: #666;
+}
+.project-running {
+    border-left: 4px solid #f6ad55; /* orange accent for running */
+}
+.project-completed {
+    border-left: 4px solid #48bb78; /* green accent for completed */
+}
+
 .areas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
